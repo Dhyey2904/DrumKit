@@ -1,0 +1,126 @@
+body {
+  text-align: center;
+  background-image: linear-gradient(
+    to left,
+    #4942e4,
+    #8696fe,
+    #c4b0ff,
+    #4942e4
+  );
+  background-size: 600%;
+  animation-name: moveInRight;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInRight {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 90% 0;
+  }
+  75% {
+    background-position: 40% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+h1 {
+  font-size: 5rem;
+  color: red;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 white;
+}
+
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
+}
+
+.w {
+  background-image: url("images/tom.png");
+  background-size: 100% 100%;
+}
+
+.a {
+  background-image: url("images/tom3.png");
+  background-size: 100% 100%;
+}
+
+.s {
+  background-image: url("images/tom3.png");
+  background-size: 100% 100%;
+}
+
+.d {
+  background-image: url("images/tom2.png");
+  background-size: 100% 100%;
+}
+
+.j {
+  background-image: url("images/kick.png");
+  background-size: 100% 100%;
+}
+
+.k {
+  background-image: url("images/snare.png");
+  background-size: 100% 100%;
+}
+
+.l {
+  background-image: url("images/crash.png");
+  background-size: 100% 100%;
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid white;
+  font-size: 5rem;
+  font-family: "Arvo", cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: red;
+  text-shadow: 3px 0 white;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.footer {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+}
+
+@keyframes drumAnimation {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 165, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px 10px rgba(255, 165, 0, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 165, 0, 0);
+  }
+}
+
+.drumAnimation {
+  animation: drumAnimation 0.3s linear infinite;
+}
